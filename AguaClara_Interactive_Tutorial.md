@@ -18,10 +18,7 @@ You can find a GitHub tutorial [here](https://github.com/AguaClara/aguaclara_tut
 
 1. Below this, write a sentence or two about yourself:
 
-<!--- Fill you answer here. --->
-
-
-
+Hello my name is Jennifer
 
 ## Headers
 To signify a header, use `#`. The more `#` you use, the smaller the header gets. For example, the following header Markdown code gets translated as such:
@@ -44,7 +41,7 @@ To signify a header, use `#`. The more `#` you use, the smaller the header gets.
 
 1. Make a header of similar size as Header 3 with whatever text you want:
 
-<!--- Fill you answer here. --->
+### Header Example
 
 ## Emphasis
 There are several different ways to emphasize text: *italics*, **bold**, ***combined***, and ~~strikethrough~~.
@@ -56,7 +53,11 @@ There are several different ways to emphasize text: *italics*, **bold**, ***comb
 
 1. Write 4 of your favorite words using each type of emphasis:
 
-<!--- Fill you answer here. --->
+*pizza*
+**snow**
+***kittens***
+~~Cornell~~
+
 
 
 ## Lists
@@ -68,10 +69,17 @@ Lists are very easy to do. For a bulleted list, use the asterisk and for a numbe
 
 1. Now try it out for yourself. Write down a list of things you hope to achieve this semester, and elaborate on them with sub items:
 
-<!--- Fill you answer here. --->
+
+1. I would like to help design an influent system for an AguaClara UASB
+
+
+2. I would like to get an adequate amount of sleep each night
+* maybe 8 hours a night?
+  - I will settle for 6
+
 
 ## Images
-To input images, you'll either need an image URL or a file path to your image. For AguaClara work, your repository should have a folder for images where you can get an image URL or file path from. In this tutorial, I've made an image folder with a picture in the `aguaclara_tutorial` repository
+To input images, you'll either need an image URL or a file path to your image. For AguaClara work, your repository should have a folder for images where you can get an image URL or file path from. In this tutorial, I've made an image folder with a picture in the `aguaclara_tutorial` repository.
 
 To get your image URL, go to your GitHub repository on your web browser and navigate to the file where your image is stored. Click on the image name, and it should pop up. Right click on the image, and copy image address to get it's URL. **(Note: You should never copy the URL to the folder where the image is stored in the repository.)**
 
@@ -100,7 +108,11 @@ Image with Height and Width Adjusted:
 
 1. Make an images folder in your personal repository, and import an image of your hometown or pet from that folder. Do it unformatted using the image URL and the relative file path method, then do it again but instead change the height and width of your image:
 
-<!--- Fill you answer here. --->
+![Silver Spring](https://github.com/jkj46/jkj46/blob/master/images/silver_spring_.jpg?raw=true)
+
+![Silver Spring](/images/silver_spring_.svg.png)
+
+<img src="https://github.com/jkj46/jkj46/blob/master/images/silver_spring_.jpg?raw=true" height=200 width=100>
 
 
 
@@ -113,7 +125,9 @@ To insert a link, all you have to do is enclose your linked text in `[]` followe
 
 1. Below, write a sentence describing your major, and insert a link to your major's department website.
 
-<!--- Fill you answer here. --->
+BEE is a Cornell major in the College of Engineering in which students learn how to become bees. [How to BEE a bee](https://bee.cals.cornell.edu/).
+
+
 
 ## Tables
 Tables in Markdown are slightly harder, but there's an automatic function that allows to you make one easily. When working in a `.md` file, all you have to do is type `table` and hit enter. It will initialize a 2 by 2 table, but you can easily increase the width by going to the last column and hitting `Tab` or it's height by clicking in any cell and hitting `Enter`. Notice in the example how the text below the header is justified left, center, and right. This is due to the line below the header. A line with a colon on the far left of the dashes only indicates left justified, colons on both sides of the dashes indicates centered, and a colon on the far right of the dashes indicates right justified.
@@ -144,7 +158,11 @@ When making tables, it's not important that the lines match up. For example, the
 1. Create a table listing your 3 favorite animals, foods, books, and places on campus. Try out the different cell justifications:
 
 <!--- Fill you answer here. --->
-
+| Animals  | Foods | Books | Places |
+|:-------- |:----- |:----- | ------ |
+|1. Nautilus|1. Pasta  |1. Harry Potter  |1. My bed|
+|2. Cat  |2. Any form of potato|2. The Tiger's Wife   |2. Hollister Lounge|
+|3. Shark        |3. Carbs in general  |3. The Secret Garden|3. Riley Robb (JUST KIDDING!!)     |
 
 
 ## Code and Syntax Highlighting
@@ -162,23 +180,25 @@ For larger code blocks where you report multiple lines of code, you always start
 
 1. Below, write a Python print function with a different string using syntax highlighting:
 
-<!--- Fill you answer here. --->
+`print('happy :)')`
 
 2. Now write a block of Python code for that same print statement:
 
-<!--- Fill you answer here. --->
-
-
+~~~~
+```python
+print('happy :)')
+```
+~~~~
 
 ## LaTeX Equations
 You can also input LaTeX formatted equations in your Markdown file. To indicate where your equation is, you need to start and end your LaTeX equation with `$$`. To get the LaTeX preview to show it formatted, press `Cntrl + Shift + X`. For example, toggle the LaTeX preview for the line below:
 
 $$ Re_D = \frac{uD}{\nu} $$
 
+
 1. Try it on your own! Write your favorite equation using LaTeX source code and toggle the LaTeX preview to see it formatted:
 
-<!--- Fill you answer here. --->
-
+$$ E = mc^2 $$
 
 # Using Python and Running it With Hydrogen in Markdown
 
@@ -206,6 +226,7 @@ plt.grid(which = 'major')
 plt.grid(which = 'minor')
 plt.legend(loc = 'lower right', ncol = 1)
 plt.show()
+
 ```
 
 ## Python Basics
@@ -213,39 +234,55 @@ These questions are meant to test what you've learned from the Python Basics tut
 
 1. Write a conditional statement with 3 conditions: when x is 10, when x is 1, and when x is anything other than 1 or 10. For each condition, have your code print what the value is or isn't.
 
-<!--- Fill you answer here. --->
-
-
-
+```python
+x= 1
+if x == 10:
+  print('x = 10')
+elif x == 1:
+  print('x = 1')
+else:
+  print('x is not equal to 1 or 10')
+```
 
 2. Write a `for` loop that takes a variable with an initial value of 0, and adds the current index to the previous value of that variable (i.e. you variable should grow in size every iteration). Perform the iteration 20 times, and have the final value be printed at the end.
 
-<!--- Fill you answer here. --->
+```python
+v = 0
+for i in range(0,20):
+  v = v + i
 
-
-
-
-
-
-
-
+print(v)
+```
 
 3. Using the NumPy package, calculate the value of sin(4), and use the sigfig function from the utility module in aide_design to get your answer to 3 sig-figs. *(Hint: You will need to import these packages. Remember how to do that?)*
 
-<!--- Fill you answer here. --->
+```python
+from aide_design.play import*
+import math as m
+print(ut.sig(m.sin(4),3))
 
+```
 
 
 4. Create a `list` of length 5, and verify the length of your list. Once you've done that, turn your `list` into an `array` and apply units of meters to it. After that, create a 5x5 `array`, extract the middle row and middle column. Verify the size of your 2D `array` and apply units of liters to it.
 
-<!--- Fill you answer here. --->
+```python
+from aide_design.play import*
+list = [1, 2, 3, 4, 5]
+print(len(list))
 
+array = np.array(list)*u.m
 
+matrix = np.array([[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15],[16,17,18,19,20],[21,22,23,24,25]])
 
+mid_row = matrix[2,:]
+print(mid_row)
+mid_col = matrix[:,2]
+print(mid_col)
+print(np.size(matrix))
+matrix_size = matrix*u.L
 
-
-
-
+```
 
 
 5.  One of the most famous equations for a particle diffusing through a liquid at low Reynolds Number is the Stokes-Einstein Equation where k<sub>B</sub> is the Boltzmann constant, T is the temperature in Kelvin, eta is the dynamic viscosity in kg/(m*s), and r is the particle radius. Write a function that takes a temperature in Kelvin, a particle radius in meters, and a viscosity of water to calculate the diffusion coefficient D.
@@ -257,17 +294,42 @@ These questions are meant to test what you've learned from the Python Basics tut
 $$ D = \frac{k_BT}{6\pi\eta r} $$
 
 ```python
+from aide_design.play import*
 from scipy.constants import Boltzmann as kB_sc # I've imported the unitless value for kB from SciPy
 
 kB = kB_sc * u.joule / u.kelvin # I've given kB units for you in J/K; you can use the kB variable to give you Boltzmann's constant with units
-
-# Write your code here
+def stokes_ein(T, R, eta):
+  T = T*u.K
+  R = R*u.m
+  eta = eta*(u.kg/(u.s*u.m))
+  D = (kB*T)/(6*np.pi*eta*R)
+  return (D.to_base_units())
 
 ```
 
 6. You have a pipe with a radius of 0.2 m with water flowing in it at 2 m<sup>3</sup>/s. You want to see how the Reynolds Number changes as viscosity changes due to a change in temperature from 0 to 200<sup>o</sup>C. Create a plot of Reynolds Number against Temperature in Kelvin to show a relationship. Make sure your plot has a title, labeled axes, and axes grid. You can use functions from `physchem` like `pc.re_pipe` and `pc.viscosity_kinematic`. *(Hint: Make an array of temperatures to input into the `pc.viscosity_kinematic` function)*. Make sure to save your plot to your images folder in your personal repository, and display it below using `plt.show()` and an image insertion using a relative file path to the image.
 
-<!--- Fill you answer here. --->
+
+```python
+from aide_design.play import*
+r = 0.2*u.m
+D = r*2
+Q = 2*(u.m**3/u.s)
+temp_array = np.arange(0,201)*u.degC
+temp_array = temp_array.to(u.degK)
+nu_array = pc.viscosity_kinematic(temp_array)
+Re_array = pc.re_pipe(Q,D,nu_array)
+
+plt.plot(temp_array, Re_array)
+plt.xlabel('Temperature (degK)')
+plt.ylabel('Re')
+plt.title('Change in Re as viscosity changes')
+plt.show()
+
+
+
+
+```
 
 # Teletype Basics
 In this section you and your team can practice using Teletype together.
@@ -277,7 +339,9 @@ In this section you and your team can practice using Teletype together.
 <!--- Fill you answer here. --->
 
 
+Hi Jennifer, you're awesome!  -- Zac
 
+Hi Jennifer, you're doing great!  Glad to have you on the Subteam -- Ian
 
 2. Have you other team members create a portal for you to join. In their Markdown file, write them something encouraging, and sign your name.
 
