@@ -343,6 +343,8 @@ Hi Jennifer, you're awesome!  -- Zac
 
 Hi Jennifer, you're doing great!  Glad to have you on the Subteam -- Ian
 
+Hey Jennifer! It's wonderful to be working with you --Ananya
+
 2. Have you other team members create a portal for you to join. In their Markdown file, write them something encouraging, and sign your name.
 
 <!--- Fill you answer here. --->
